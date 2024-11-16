@@ -1,5 +1,5 @@
-#include <fcntl.h>
 #include <ctype.h>
+#include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -25,9 +25,8 @@ int main(int argc, char *argv[]) {
     for (int i = 1; i < argc; ++i) {
         for (int j = 0; argv[i][j] != '\0'; ++j) {
             if (!isdigit(argv[i][j])) {
-                printf(
-                    "Incorrect usage. The parameters you provided are not "
-                    "positive integers\n");
+                printf("Incorrect usage. The parameters you provided are not "
+                       "positive integers\n");
                 return 1;
             }
         }
